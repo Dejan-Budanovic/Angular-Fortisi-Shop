@@ -4,3 +4,18 @@
 .contact-info a:hover {
     text-decoration: none;
 }
+.subBtn {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: 35px;
+}
+.subBtn:hover {
+    background-color: white;
+    color:black;
+}
+
+.subInput{
+    display: inline;
+    float: left;
+}
