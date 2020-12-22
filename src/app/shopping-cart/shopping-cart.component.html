@@ -2,13 +2,32 @@
     <div class="row">
         <h3>Shopping Cart</h3>
         <hr>
-        <ul class="list-group" *ngFor="let item of cart" >
-            <li class="list-group-item">{{item.Name}} (ID: {{item.Id}}) {{item.Price}} <input type="number" value="{{item.Qty}}" min="1"> {{item.Sum}}</li>
-          </ul>
-          <p>
+        <table class="table" *ngFor="let item of cart">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product ID</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Sum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td>{{item.Name}}</td>
+                <td>{{item.Id}}</td>
+                <td>{{item.Price}}</td>
+                <td><input class="form-control" type="number" value="{{item.Qty}}" min="1"></td>
+                <td>{{item.Sum}}</td>
+              </tr>
+            </tbody>
+            </table>
+          <p class="col-lg-9">
              Total: {{totalPrice}} <br>
              Items in cart: {{totalItems}}
           </p>
-        <button (click)="finishShopping()">Checkout</button>
+        <button class="addToCartBtn col-lg-3" (click)="finishShopping()">Checkout</button>
     </div>
 </div>

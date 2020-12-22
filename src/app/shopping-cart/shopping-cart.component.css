@@ -1,0 +1,15 @@
+.addToCartBtn {
+    background-color: black;
+    color: white;
+    float: right;
+
+}
+
+.addToCartBtn:hover {
+    background-color: white;
+    color:black;
+}
+
+.form-control {
+    width: 30%;
+}
