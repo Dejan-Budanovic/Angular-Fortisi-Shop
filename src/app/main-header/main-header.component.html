@@ -31,7 +31,9 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" routerLink="/login">Log In</a>
-                <a class="dropdown-item" routerLink="/sign-up">Sign Up</a>
+                <ng-template [ngIf]="!authService.registeredUser()">
+                  <a class="dropdown-item" routerLink="/sign-up">Sign Up</a>
+                </ng-template>
                 <ng-template [ngIf]="authService.registeredUser()">
                   <a class="dropdown-item" (click)="logOut()">Log Out</a>
                 </ng-template>
