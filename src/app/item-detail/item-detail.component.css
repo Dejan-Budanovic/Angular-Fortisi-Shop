@@ -1,0 +1,38 @@
+.form-control {
+    width: 30%;
+}
+.addToCartBtn {
+    background-color: black;
+    color: white;
+}
+
+.addToCartBtn:hover {
+    background-color: white;
+    color:black;
+}
+
+.nav-btns { 
+    float: right;
+    color: dodgerblue;
+    list-style: none;
+    line-height: 1;
+    margin: 5px 0;
+}
+
+.nav-btns li {
+    display: inline-block;
+    padding: 1px 3px;
+    cursor: pointer;
+}
+
+.nav-btns li:first-child{
+    border-right: 1px solid black;
+}
+
+.shop-nav {
+    padding-top: 20px;
+}
+
+#route {
+    float: left;
+}

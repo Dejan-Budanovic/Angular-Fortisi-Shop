@@ -1,0 +1,9 @@
+.main-navigation {
+    border-bottom: 3px solid grey;
+}
+.navbar {
+    padding: 0;
+  }
+  .logo {
+    height: 50px;
+  }

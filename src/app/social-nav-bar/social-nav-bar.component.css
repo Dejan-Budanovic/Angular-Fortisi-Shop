@@ -1,0 +1,20 @@
+.social-nav {
+    /*border: 1px solid red;*/
+    float: right;
+    /*transform: translateY(50vh);*/
+    top: 50vh;
+    right: 0;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2000;
+  }
+  .social-nav a {
+    /*border: 1px solid blue;*/
+    padding: 5px;
+    align-items: center;
+  }
+  .social-nav a img {
+    /*border: 1px solid green;*/
+    width: 1em;
+    height: 1em;
+  }

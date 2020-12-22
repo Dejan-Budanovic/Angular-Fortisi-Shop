@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="clearfix shop-nav">
+        <h4 id="route" >{{href}}</h4>
+        <ul class="nav-btns">
+            <li><a (click)="back()">&lt; Prev</a></li>
+            <li><a (click)="next()">Next &gt;</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="row"  *ngIf="item">
+        <div class="col-lg-7">
+            <img class="w-80" src={{item.ImgPath}} alt={{item.Name}}>
+       </div>
+        <div class="col-lg-4">
+            <h3>{{item.Name}}</h3>
+            <h3>{{item.Price}}</h3>
+            <p class="font-italic text-justify">{{item.Description}}</p>
+            <hr>
+            <div class="form-group">
+                <label for="qty">Quantity</label>
+                <input class="form-control" size="3" type="number" class="form-control" name="qty" #itemQty min="1" value="1">
+              </div>
+            <button class="addToCartBtn" (click)="addItem(itemQty.value)">Add to cart</button>
+        </div>
+    </div>
+</div>

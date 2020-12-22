@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <h3>Shopping Cart</h3>
+        <hr>
+        <ul class="list-group" *ngFor="let item of cart" >
+            <li class="list-group-item">{{item.Name}} (ID: {{item.Id}}) {{item.Price}} <input type="number" value="{{item.Qty}}" min="1"> {{item.Sum}}</li>
+          </ul>
+          <p>
+             Total: {{totalPrice}} <br>
+             Items in cart: {{totalItems}}
+          </p>
+        <button (click)="finishShopping()">Checkout</button>
+    </div>
+</div>

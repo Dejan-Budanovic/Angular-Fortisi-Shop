@@ -1,0 +1,11 @@
+<div class="container text-center mt-5" id="shop">
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let item of items">
+        <a routerLink="../shop/{{item.Id}}"><img class="w-100" src={{item.ImgPath}} alt={{item.Name}}></a>
+        <h6>{{item.Name}}</h6>
+        <p>{{item.Price}} din</p>
+      </div>
+    </div>
+    <button class="btn btn-outline-dark" type="button" name="button" routerLink="/shop">Load more</button>
+  </div>
+  

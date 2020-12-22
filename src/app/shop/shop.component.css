@@ -1,0 +1,29 @@
+.categories-list {
+    list-style: none;
+}
+.categories-list li {
+    padding: 3px;
+}
+.categories-list :not(:first-child) {
+    border-bottom:2px dashed black ;
+    cursor: pointer;
+}
+.categories-list :not(:first-child):hover {
+    border-bottom:2px dashed gray ;
+    color: gray;
+}
+.categories-list :first-child {
+    border-bottom:3px solid black ;
+    font-weight: 700;
+}
+.items-wrapper {
+    margin-top: 20px ;
+}
+.active {
+    border-bottom:2px dashed gray ;
+    color: gray;
+}
+.inactive {
+    border-bottom:2px dashed black ;
+    color: black;
+}

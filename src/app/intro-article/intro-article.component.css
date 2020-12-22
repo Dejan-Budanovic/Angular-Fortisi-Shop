@@ -1,0 +1,16 @@
+img {
+    height: 400px;
+    object-fit: cover;
+  }
+  .cover-wrapper {
+    position: relative;
+  }
+  .cover-text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text-wrapper {
+    padding: 30px 100px;
+  }

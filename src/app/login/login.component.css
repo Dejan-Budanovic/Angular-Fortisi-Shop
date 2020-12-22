@@ -1,0 +1,12 @@
+.container-wrapper {
+    background-image: url("/assets/signupPattern.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 87vh;
+}
+.forma {
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 50px;
+    border: 3px solid black;
+}
